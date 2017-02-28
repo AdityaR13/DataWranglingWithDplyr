@@ -6,3 +6,4 @@ This repository contains the code demonstrated in the YouTube tutorial series [D
 
 - [Data Wrangling and Feature Engineering with dplyr - Part 1](https://youtu.be/Ds6arVTWwDc)
 - [Data Wrangling and Feature Engineering with dplyr - Part 2](https://youtu.be/NXVSh6gxoJc)
+- [Data Wrangling and Feature Engineering with dplyr - Part 3](https://youtu.be/yghBmuBxeH8)
