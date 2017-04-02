@@ -215,10 +215,14 @@ View(age.lookup)
 #======================================================================
 # Impute missing ages using lookup table
 #
+
+# NOTE - The following code incorporates a bug fix not shown
+#        in the video!
 train <- train %>%
   left_join(age.lookup, by = c("Pclass", "Title")) %>%
   mutate(Age = ifelse(Age.Missing == "Y", 
-                      ifelse(Title == "Miss.", Age.Median, Age.Mean), 
+                      ifelse(Title == "Miss." & Pclass == "3", 
+                             Age.Median, Age.Mean), 
                       Age)) %>%
   select(-Age.Median, -Age.Mean)
 View(train)
